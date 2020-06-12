@@ -1,0 +1,17 @@
+.Main {
+  display: grid;
+  grid-template-columns: 250px repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: calc(100% - 30px);
+}
+
+.Main-Sidebar {
+  grid-area: 1 / 1 / 6 / 2;
+  background-color: #242424;
+}
+.Main-Iconpacks {
+  grid-area: 1 / 2 / 6 / 6;
+  background-color: #212121;
+}
