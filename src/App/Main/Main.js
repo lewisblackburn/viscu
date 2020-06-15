@@ -6,8 +6,10 @@ import "./Main.css";
 const Main = () => {
   const [icons, setIcons] = useState({
     category: "category",
-    data: ["icons"],
+    data: ["icons", "here"],
   });
+
+  // console.log(localStorage.getItem("ionicons"));
 
   const importIcons = () => {
     window.electron.dialog
@@ -24,6 +26,7 @@ const Main = () => {
             let category = folder.split("/").slice(-1).pop();
           }
           let icons = window.loadIcons(folder);
+          // localStorage.setItem(category);
           setIcons({ category, data: icons });
         }
       });

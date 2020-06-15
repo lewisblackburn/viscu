@@ -6,11 +6,15 @@ const Sidebar = (props) => {
     <div className="Sidebar">
       <div className="Sidebar__container">
         <input className="Sidebar__container-search" />
-      </div>
-      <div className="Sidebar__footer">
-        <button className="Sidebar__footer-button" onClick={props.importIcons}>
-          Import
-        </button>
+
+        <div className="Sidebar__footer">
+          <button
+            className="Sidebar__footer-button"
+            onClick={props.importIcons}
+          >
+            Import
+          </button>
+        </div>
       </div>
     </div>
   );

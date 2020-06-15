@@ -1,4 +1,6 @@
 .Titlebar {
+  position: fixed;
+  width: 100%;
   /* -webkit-app-region: drag; */
 }
 

@@ -1,8 +1,10 @@
 .Iconpacks {
   width: calc(100vw - 250px);
+  margin-top: 10px;
 }
 
 .Iconpacks__container {
+  padding: 10px;
   font-size: 15px;
   color: white;
 }
